@@ -11,17 +11,21 @@ public class Home_page {
 	
 //rule-2 find the elements by using @findby annotation
 	//webelement for Add button
+	
 	@FindBy(xpath="//button[@class=\"oxd-button oxd-button--medium oxd-button--secondary\"]")
 	private WebElement Addbutton;
 	
 	//webelement for select domain
+	
 	@FindBy(xpath="//div[@class='oxd-select-text-input'][1]")
 	private WebElement search;  
 	//select from the select class
-	
+
 	//webelement for typeforhits
+	
 	@FindBy(xpath="//input[@placeholder='Type for hints...']")
 	private WebElement Typeforhints; 
+	
 	//webelement for select tag
 	@FindBy(xpath="//div[text()=\"-- Select --\"][2]")
 	private WebElement search2;
@@ -61,6 +65,7 @@ public class Home_page {
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
 	}
+	
 	//Business library
 	
 	public void homepagedetails(String hints, String uname, String pword, String repeat ) {
